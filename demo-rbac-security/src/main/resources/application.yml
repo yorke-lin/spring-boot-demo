@@ -6,10 +6,11 @@ spring:
   datasource:
     hikari:
       username: root
-      password: root
+      password: 123
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/spring-boot-demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://127.0.0.1:3306/demo-rbac-security?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
   jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
     show-sql: true
     generate-ddl: false
     hibernate:

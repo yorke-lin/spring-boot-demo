@@ -1,7 +1,7 @@
 package com.xkcoding.rbac.security.common;
 
 import lombok.Getter;
-
+import com.xkcoding.rbac.security.common.IStatus;
 /**
  * <p>
  * 通用状态码

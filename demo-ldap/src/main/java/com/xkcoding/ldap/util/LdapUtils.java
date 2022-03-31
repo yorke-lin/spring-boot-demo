@@ -1,9 +1,10 @@
 package com.xkcoding.ldap.util;
 
-import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
+
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Base64;
 
 /**
  * LdapUtils
@@ -34,7 +35,7 @@ public class LdapUtils {
             ldapPassword = ldapPassword.substring(5);
         }
         // 解码BASE64
-        byte[] ldapPasswordByte = Base64.decode(ldapPassword);
+        byte[] ldapPasswordByte = Base64.getDecoder().decode(ldapPassword);
         byte[] shaCode;
         byte[] salt;
 
