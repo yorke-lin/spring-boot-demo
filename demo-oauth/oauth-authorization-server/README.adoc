@@ -69,17 +69,17 @@ spring boot oauth2 授权服务器，
 - 用户名：admin
 - 密码：123456
 
-image::image/Login.png[login]
+image::image/Login.png?raw=true[login]
 
 === 确认授权
 
 登录成功以后，进入确认授权页面。已经确认过的用户，不会再次要求确认。
 
-image::image/Confirm.png[confirm]
+image::image/Confirm.png?raw=true[confirm]
 
 确认授权后，获取授权码
 
-image::image/Code.png[code]
+image::image/Code.png?raw=true[code]
 
 === 请求 token
 
@@ -182,7 +182,7 @@ curl --location --request POST 'http://127.0.0.1:8080/oauth/check_token' \
 
 携带回调地址进行退出，退出完成后跳转到回调地址：
 
-image::image/Logout.png[logout]
+image::image/Logout.png?raw=true[logout]
 
 退出以后自动跳转到回调地址（要加 `http` 或 `https`）
 
