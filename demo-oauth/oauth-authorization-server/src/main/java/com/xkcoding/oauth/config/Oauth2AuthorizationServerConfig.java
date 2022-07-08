@@ -31,7 +31,13 @@ public class Oauth2AuthorizationServerConfig extends AuthorizationServerConfigur
 
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
-        endpoints.authenticationManager(authenticationManager).userDetailsService(sysUserService).tokenStore(tokenStore).accessTokenConverter(jwtAccessTokenConverter);
+        endpoints.authenticationManager(authenticationManager)
+            // 自定义用户
+            .userDetailsService(sysUserService)
+            // 内存存储
+            .tokenStore(tokenStore)
+            // jwt 令牌转换
+            .accessTokenConverter(jwtAccessTokenConverter);
     }
 
     @Override

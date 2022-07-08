@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/oauth?allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/demo_oauth?allowPublicKeyRetrieval=true
     username: root
-    password: 123456
+    password: 123
     hikari:
       data-source-properties:
         useSSL: false
